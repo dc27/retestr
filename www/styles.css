@@ -1,0 +1,45 @@
+    body {
+      background-color: #424242;
+      color: black;
+    }
+    
+    #re_pattern {
+      font-size: max(2.2vw, 20px);
+      height: max(8vh, 20px);
+      color: black;
+      background-color: #f0f0f0;
+    }
+    
+    #test_string {
+      font-size: max(2.5vw, 20px);
+      font-family: Monospace;
+      color: black;
+      background-color: #f0f0f0;
+    }
+    
+    .textareainContainer {
+      background-color: #f0f0f0;
+      border-radius: 0.25em;
+    }
+    
+    #retestr_highlight mark {
+      padding:0;
+      margin: 0 -0.1rem -0.6rem;
+      border-radius:0.25em;
+      border:1px solid black;
+    }
+    
+    #matchVect {
+      font-size: max(2vw, 20px);
+      background-color: #f0f0f0;
+    }
+    
+    
+    a, a:hover, a:visited {
+      color: #FF85FF;
+    }
+    
+    footer {
+      font-size: max(1.5vw, 20px);
+      color: white;
+    }
