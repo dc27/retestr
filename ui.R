@@ -8,6 +8,7 @@ ui = fluidPage(
     tags$script(type="text/javascript",src=c(href="js/jquery.highlighttextarea/jquery.highlighttextarea.js")),
     tags$link(rel="stylesheet", href="js/jquery.highlighttextarea/jquery.highlighttextarea.css"),
     tags$link(rel="stylesheet", href="styles.css"),
+    tags$title("retestr")
   ),
   tags$br(),
   textInput("re_pattern", label = NULL, width = "100%", value = "[:punct:]"),

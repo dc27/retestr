@@ -1,5 +1,3 @@
-library(shiny)
-
 source("R/locate_matches.R")
 
 placeHolderText = paste0(

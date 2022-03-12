@@ -40,6 +40,7 @@ locate_matches <- function(test_string, search_pattern) {
 # convert matrix of starts and ends of matches into a js array format, ready for
 # highlighting
 convert_to_js_arr <- function(m) {
+  require(stringr)
   
   arr <- ""
   
@@ -49,7 +50,7 @@ convert_to_js_arr <- function(m) {
     arr <- paste(arr, as_arr_el, sep=", ")
   }
   
-  arr <- str_sub(arr, start = 3)
+  arr <- stringr::str_sub(arr, start = 3)
   
   js_arr <- paste0("[", arr, "]")
   
