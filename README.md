@@ -4,7 +4,8 @@ Basic shiny app to test regular expressions
 
 ## Available on Heroku
 
-The live version of the app is hosted and available on Heroku.
+The live version of the app is hosted and available on Heroku at
+[https://retestr.herokuapp.com/](https://retestr.herokuapp.com/)
 
 ![Start Lorem](images/retestr-default.png)
 
