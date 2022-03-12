@@ -1,13 +1,4 @@
 server = function(input, output, session){
-  
-  # update if either input is changed
-  listenInputs <- reactive(
-    list(
-      input$re_pattern,
-      input$test_string
-    )
-  )
-  
   matches <- reactive(
     locate_matches(
       test_string = input$test_string,
@@ -21,6 +12,7 @@ server = function(input, output, session){
   
   output$matchVect <- renderText(matches()$strs)
   
+  # if re pattern is updated ...
   observeEvent(input$re_pattern, {
     
       # construct js expression to highlight matches found by stringr
@@ -36,6 +28,7 @@ server = function(input, output, session){
     
   })
   
+  # if test string is updated ...
   observeEvent(input$test_string, {
     # no matches was removing cursor from textarea annoyingly,
     # guard against that condition.
