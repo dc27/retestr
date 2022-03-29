@@ -11,7 +11,9 @@ ui = fluidPage(
     tags$title("retestr")
   ),
   tags$br(),
-  textInput("re_pattern", label = NULL, width = "100%", value = "[:punct:]"),
+  textInput(
+    "re_pattern", label = NULL,width = "100%",value = "[:punct:]"
+    ),
   tags$div(class = "textareainContainer",
            textAreaInput(
              "test_string",

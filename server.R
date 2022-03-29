@@ -1,9 +1,16 @@
 server = function(input, output, session){
+  parsed_re_pattern <- reactive(
+    str_replace_all(input$re_pattern, fixed("\\\\"), "\\")
+  )
+  
+  
   matches <- reactive(
-    locate_matches(
-      test_string = input$test_string,
-      search_pattern = input$re_pattern
-    )
+    {
+      locate_matches(
+        test_string = input$test_string,
+        search_pattern = parsed_re_pattern()
+      )
+    }
   )
   
   ranges_arr <- reactive(
