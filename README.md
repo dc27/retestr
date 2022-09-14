@@ -20,7 +20,7 @@ Or you can run the app locally by:
 
 I liked sites like: [regexr.com](https://regexr.com) a lot. But one thing that was lacking was the ability to use pre-built character classes, which are compatible with the `{stringr}` package in R.
 
-So this testing sandbox allows for similar functionality but uses R and stringr to locate the matches and then passes the location of the matches to a jquery plugin that does the highlighting.
+So this testing sandbox allows for similar functionality but uses R and `{stringr}` to locate the matches and then passes the location of the matches to a jquery plugin that does the highlighting.
 
 
 ## Usage

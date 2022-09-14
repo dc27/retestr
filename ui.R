@@ -12,17 +12,20 @@ ui = fluidPage(
   ),
   tags$br(),
   textInput(
-    "re_pattern", label = NULL,width = "100%",value = "[:punct:]"
-    ),
-  tags$div(class = "textareainContainer",
-           textAreaInput(
-             "test_string",
-             label = NULL,
-             value = placeHolderText,
-             height = "65vh",
-             width = "100%",
-             resize = c("none")
-           )
+    "re_pattern", label = NULL,width = "100%",value = "[:punct:]",
+    placeholder = "pattern to test"
+  ),
+  tags$div(
+    class = "textareainContainer",
+    textAreaInput(
+      "test_string",
+      label = NULL,
+      value = placeHolderText,
+      height = "65vh",
+      width = "100%",
+      resize = c("none"),
+      placeholder = "string to match against"
+    )
   ),
   verbatimTextOutput(
     "matchVect"
